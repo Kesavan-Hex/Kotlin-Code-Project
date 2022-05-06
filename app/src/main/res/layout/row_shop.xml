@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/shopRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+       android:id="@+id/shopCv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/ic_baseline_store_purple"
+        app:c_border="true"
+        app:c_border_width="1dp"
+        app:c_border_color="@color/browser_actions_bg_grey"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/shopCv"
+            android:layout_toStartOf="@+id/nextIV"
+            >
+            <TextView
+                android:id="@+id/shopnameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:text="Shop Name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/phoneTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:text="Phone"
+                android:textColor="@color/black"
+                />
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/nextIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_next_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
